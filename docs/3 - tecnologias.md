@@ -1,31 +1,44 @@
-# 📦 Tecnologias Usadas no Projeto MangaVerse
+# Tecnologias do Projeto - Manga Reader Site
 
-## Frontend
-- **React.js** – Estrutura moderna e reativa para construir a interface do usuário.
-- **Bootstrap** – Escolhido por oferecer componentes prontos, responsividade fácil e estilo consistente.
-  - Alternativas consideradas:
-    - Tailwind CSS (exige mais configuração e entendimento do utility-first)
-    - Material UI (pesado demais para esse projeto simples)
+## 1. Frontend
 
-## Backend
-- **Node.js + Express** – API simples e rápida para integração com o frontend.
-- **MongoDB** – Banco de dados não relacional, fácil de modelar coleções de mangás, capítulos e usuários.
+- **HTML5, CSS3 e JavaScript** – Estrutura, estilo e interatividade básica.
+- **Framework:** React.js *(SPA e componentes reutilizáveis)*
+- **Estilização:** Bootstrap (com tema escuro) + Tailwind CSS para detalhes visuais.
+- **Gerenciamento de Estado:** Context API (pode ser trocado por Redux se necessário)
+- **Roteamento:** React Router DOM
+- **Consumo de API:** Axios ou Fetch API
 
-## Outras Ferramentas
-- **GitHub** – Controle de versão e colaboração
-- **Figma** – Protótipos das páginas
-- **Vercel** – Deploy automático do frontend
-- **Render** – Hospedagem da API e banco de dados
+## 2. Backend
 
-## Decisões Tomadas
-- Preferimos Bootstrap em vez de Tailwind pois:
-  - Já possui um sistema de grid e componentes prontos
-  - Pouco tempo disponível para customização
-  - Time já conhece bem Bootstrap
-- Futuramente pode ser migrado para Tailwind caso o projeto cresça
+- **Plataforma:** Node.js com Express.js
+- **Banco de Dados:** PostgreSQL
+- **ORM:** Sequelize ou Prisma
+- **Autenticação:** JWT (JSON Web Token)
+- **Hash de senha:** bcrypt
+- **Serviços RESTful:** CRUD de usuários, mangás, capítulos, favoritos, etc.
+
+## 3. Armazenamento de Imagens
+
+- **Local** (durante desenvolvimento)
+- **Produção:** considerar S3 (Amazon), Cloudinary ou outros
+
+## 4. DevOps e Ferramentas
+
+- **Gerenciador de pacotes:** npm ou yarn
+- **Versionamento:** Git + GitHub
+- **Ambiente local:** Docker (opcional, mas útil)
+- **Hospedagem Frontend:** Vercel ou Netlify
+- **Hospedagem Backend:** Render, Railway, ou VPS (caso opte por algo mais robusto)
+- **Banco em produção:** Supabase ou ElephantSQL (PostgreSQL gratuito)
+
+## 5. Extras/Opcionais
+
+- **pdfkit ou jsPDF** – Geração de PDF para capítulos
+- **Socket.io** – Para comentários em tempo real (se usar chat)
+- **Lodash ou Day.js** – Utilidades para manipulação de dados e datas
+- **Cloudflare** – CDN e segurança de imagens
 
 ---
 
-## 📌 Notas Finais
-
-Sempre que uma nova tecnologia for adotada, esse documento deve ser atualizado.
+> ⚠️ As tecnologias podem ser alteradas ou reduzidas conforme o escopo. Comece simples e vá evoluindo conforme a necessidade.

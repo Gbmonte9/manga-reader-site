@@ -1,49 +1,43 @@
-# 🧠 Ideias para o Projeto de Site de Mangá
+# Ideias para o Projeto - Manga Reader Site
 
-## Nome do Projeto (a decidir)
-- MangaVerse
-- MangArena
-- YomuManga
-- Sakanime
+## Funcionalidades Futuras (Extras)
 
-## Funcionalidades que queremos (talvez)
-- [ ] Modo escuro e claro
-- [ ] Leitura horizontal e vertical (como Webtoon)
-- [ ] Salvar mangás como favoritos
-- [ ] Histórico de leitura por usuário
-- [ ] Comentários por capítulo
-- [ ] Sistema de notificações por novo capítulo
-- [ ] Sistema de busca por gênero, autor e título
-- [ ] Upload de mangás por admins
-- [ ] Página de “continuação de onde parei”
+- ✔️ Modo escuro ativado por padrão
+- 🔖 Marcar mangás como "lido", "lendo" ou "quero ler"
+- 📦 Download de capítulos (ZIP ou PDF)
+- 💬 Comentários por capítulo
+- 👥 Sistema de seguidores entre usuários
+- ⏳ Cronômetro de leitura ou estatísticas de tempo gasto
+- 📱 App mobile futuramente (com React Native ou Flutter)
+- 🔗 Integração com API externa (ex: MangaDex, MyAnimeList)
+- 🌐 Tradução por idioma (pt-BR, inglês, japonês)
+- ✨ Tela de descoberta com recomendações personalizadas
+- 🏅 Conquistas desbloqueáveis com a leitura (gamificação)
 
-## Ideias de interface
-- [ ] Capa dos mangás com hover animado
-- [ ] Barra lateral com menu fixo
-- [ ] Animações suaves nas transições de página
+---
 
-## Tecnologias para testar ou pesquisar
-- [ ] Algum leitor de imagens pronto (tipo viewer.js)
-- [ ] Firebase para autenticação?
-- [ ] Alguma API para mangás? (ex: Mangadex)
+## Ideias de Interface
 
-## Diferenciais do nosso projeto
-- [ ] Foco em performance
-- [ ] Boa experiência no celular
-- [ ] Possibilidade de exportar histórico em PDF?
-- [ ] Traduzido para PT/EN/JP (modo multilíngue?)
+- Layout parecido com Webtoon ou MangaDex, mas mais limpo
+- Dark mode com cores neon discretas
+- Mostrar último capítulo lido na capa do mangá
+- Leitura horizontal e vertical como opção
+- Animações suaves ao trocar de página
 
-## Inspirações
-- https://mangalivre.net/
-- https://mangadex.org/
-- https://comicwalker.com/
+---
 
----------------------------------------------------------
+## Dúvidas a Explorar
 
-## 💡 Ideia de integração com Telegram
+- Como lidar com imagens: usar servidor local, S3 ou API externa?
+- Como organizar mangás longos com +1000 capítulos (paginado?)
+- Vale a pena ter leitor offline? Como armazenar no navegador?
+- Fazer um app futuramente ou manter apenas site responsivo?
+- Deixar comentários abertos ou apenas para usuários logados?
 
-- [ ] Criar bot ou scraper para pegar capítulos de mangás postados em grupos ou canais do Telegram
-- [ ] Verificar se é possível pegar links direto de imagens (capítulos em páginas)
-- [ ] Automatizar o envio para nosso banco de dados com script
-- [ ] Usar como fonte alternativa ao invés de hospedar tudo manualmente
-- [ ] Atenção: verificar questões legais de direitos autorais
+---
+
+## Anotações Rápidas
+
+- Talvez usar `localStorage` para salvar progresso mesmo sem login
+- Permitir múltiplas contas por dispositivo (tipo "perfis")
+- Buscar paleta de cores inspirada em sites de leitura noturna

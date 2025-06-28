@@ -50,6 +50,12 @@ Cria uma nova conta de usuário.
 ```
 ---
 
+## POST /api/logout (opcional)
+
+### Descrição
+Invalida o token no frontend (backend não precisa fazer nada).
+
+
 
 
 
